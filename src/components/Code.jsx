@@ -7,34 +7,44 @@ import Result from './Result';
 
 
 const Container = styled(Box)`
-  display : flex;
-  height: 100vh;
+    background-color: #808080;
+    height: 50vh;
+    display: flex;
 `
 
 const Code = () => {
 
-  const { html, setHtml, css, setCss, js, setJs } = useContext(DataContext);
-  
-  return (
-    <Container>
-      <Editor
-        heading="HTML"
-        value={html}
-        onChange={setHtml}
-      />
-      <Editor
-        heading="CSS"
-        value={css}
-        onchange={setCss}
-      />
-      <Editor
-        heading="JavaScript"
-        value={js}
-        onChange={setJs}
-      />
-      <Result/>
-    </Container>
-  )
+    const { html, css, js, setHtml, setCss, setJs } = useContext(DataContext);
+
+    return (
+        <Container>
+            <Editor 
+                language="xml"
+                heading="HTML"
+                value={html}
+                onChange={setHtml}
+                icon='/'
+                color='#FF3C41'
+            />
+            <Editor 
+                language="css"
+                heading="CSS"
+                value={css}
+                onChange={setCss}
+                icon='*'
+                color='#0EBEFF'
+            />
+            <Editor 
+                language="javascript"
+                heading="JS"
+                value={js}
+                onChange={setJs}
+                icon='( )'
+                color='#FCD000'
+            />
+            <Result/>
+        </Container>
+    )
 }
 
-export default Code
+export default Code;
