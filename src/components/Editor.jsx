@@ -11,6 +11,7 @@ import { Controlled as ControlledEditor } from 'react-codemirror2';
 import { Box, Typography, Button, styled } from '@mui/material';
 import { CloseFullscreen } from '@mui/icons-material';
 
+import '../App.css'; 
 
 const Container = styled(Box)`
     flex-grow: 1;
@@ -33,6 +34,7 @@ const Heading = styled(Box)`
     display: flex
 `
 
+
 const Editor = ({ heading, language, value, onChange, icon, color }) => {
 
     const [open, setOpen] = useState(true);
@@ -46,7 +48,8 @@ const Editor = ({ heading, language, value, onChange, icon, color }) => {
             <Header>
                 <Heading>
                     <Box 
-                        component="span"
+                       component="span"
+
                         style={{
                             background: color,
                             borderRadius: 5,

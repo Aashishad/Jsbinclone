@@ -26,7 +26,13 @@ const Result = () => {
   }, [html, css, js])
 
   return (
-      <Box style={html || css || js ? null : {background: '#444857' }}>
+    <div class="flex flex-col">
+    <h2
+                    className="text-xl font-semibold mb-2 text-black">
+                    Output
+                </h2>
+    <Box style={html || css || js ? null : { background: '#ffffff' }}>
+      
           <iframe 
               srcDoc={src}
               title="output"
@@ -36,6 +42,7 @@ const Result = () => {
               height="100%"
           />    
       </Box>
+      </div>
   )
 }
 

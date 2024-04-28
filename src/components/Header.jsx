@@ -20,7 +20,7 @@ const Header = () => {
   </a>
   <div class="flex gap-4 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ">
 
-            <Button class='bg-yellow-400 m-4' >Login or Register</Button>
+            <Button color="yellow" >Login or Register</Button>
             <Button>Blog</Button>
             <Button>Help</Button>
     

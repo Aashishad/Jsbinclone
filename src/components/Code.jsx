@@ -7,8 +7,8 @@ import Result from './Result';
 
 
 const Container = styled(Box)`
-    background-color: #808080;
-    height: 50vh;
+    background-color: #ffffff;
+    height: 80vh;
     display: flex;
 `
 
