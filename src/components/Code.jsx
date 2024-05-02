@@ -4,6 +4,7 @@ import { Box, styled } from '@mui/material';
 
 import { DataContext } from '../context/DataProvider';
 import Result from './Result';
+import Console from './Console';
 
 
 const Container = styled(Box)`
@@ -41,7 +42,8 @@ const Code = () => {
                 onChange={setJs}
                 icon='( )'
                 color='#FCD000'
-            />
+        />
+          {/* <Console/> */}
             <Result/>
         </Container>
     )
