@@ -13,7 +13,7 @@ const Console = () => {
       consoleLog(message);
     };
 
-    return () => {w
+    return () => {
       console.log = consoleLog;
     };
   }, []);
